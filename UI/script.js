@@ -133,12 +133,129 @@ const state = {
 
 const translations = {
     en: {
+        // Header
+        brandEyebrow: "ASWE Campus Platform",
+        brandTitle: "Student Support Hub",
+        brandTagline: "Prototype flows covering mentor search, support routing, study groups, tutoring, and student life.",
+        // Nav
         navMentors: "Mentors",
         navSupport: "Support",
         navStudyGroups: "Study Groups",
+        // Hero
+        heroEyebrow: "Always-on community tooling",
+        heroTitle: "One interface for academic help, wellness support, commuter coordination, and campus discovery.",
+        heroCopy: "Each module below directly demonstrates one or more of the acceptance criteria you added.",
         heroActionStudyGroups: "Find a Study Group",
         heroActionNfr: "Review NFR Plan",
         activeLanguage: "EN",
+        statsCriteria: "criteria represented",
+        statsPublicCircles: "public circles",
+        statsNotifications: "notifications",
+        statsActiveLanguage: "active language",
+        // NFR
+        nfrEyebrow: "Non-Functional Readiness",
+        nfrTitle: "Security, Privacy, Reliability, and Scale",
+        nfrPill: "Architecture targets",
+        nfrCard1Title: "Support Circles Encryption",
+        nfrCard1Desc: "AES-256 encryption at rest, TLS 1.3 in transit, and role-gated message access.",
+        nfrCard2Title: "FERPA-Compliant Student Data",
+        nfrCard2Desc: "GPA and mental health tags are masked in the prototype and flagged as restricted academic records.",
+        nfrCard3Title: "99.99% SOS Availability",
+        nfrCard3Desc: "Emergency calling is isolated behind redundant routing and remains available during maintenance windows.",
+        nfrCard4Title: "Scale and Recovery",
+        nfrCard4Desc: "Targets include sub-1.5 second search under 1,000 concurrent users, support for 10,000 concurrent students, and a 15-minute database RPO.",
+        // Compliance
+        complianceEyebrow: "Prototype Guardrails",
+        complianceTitle: "Compliance Snapshot",
+        compliancePill: "Visible in UI",
+        // Mentor Discovery
+        mentorEyebrow: "F1 Mentor Search",
+        mentorTitle: "Mentor Discovery",
+        majorLabel: "Major",
+        allMajors: "All majors",
+        // Mentor Profile
+        mentorProfileEyebrow: "F6 Coffee Chats",
+        mentorProfileTitle: "Mentor Profile",
+        mentorProfilePill: "Calendar demo",
+        mentorProfileHint: "Pick an open slot to simulate a booking flow and create an invitation for both parties.",
+        timeSlotLabel: "Open time slot",
+        bookBtn: "Book",
+        // Support Form
+        supportEyebrow: "F2 Wellness Check",
+        supportFormTitle: "Support Form",
+        supportPill: "Routes to Housing dashboard",
+        concernLabel: "Concern summary",
+        concernPlaceholder: "Describe the concern for the Housing team.",
+        anonymousLabel: "Submit Anonymously",
+        submitBtn: "Submit",
+        // Housing Queue
+        housingEyebrow: "Housing Queue",
+        housingTitle: "Routing Dashboard",
+        housingPill: "Live intake",
+        // Study Groups
+        studyGroupsEyebrow: "F3 Study Group Filter",
+        studyGroupsTitle: "Active Study Groups",
+        courseFilterLabel: "Course filter",
+        courseFilterPlaceholder: "Try MATH 271",
+        // Support Circles
+        circlesEyebrow: "F7 Support Circles",
+        circlesTitle: "Create New Group",
+        circlesPill: "Discovery feed aware",
+        groupNameLabel: "Group name",
+        groupNamePlaceholder: "First-Gen Support Circle",
+        visibilityLabel: "Visibility",
+        publicOption: "Public",
+        privateOption: "Private/Invite Only",
+        createGroupBtn: "Create Group",
+        publicFeedTitle: "Public Discovery Feed",
+        privateFeedTitle: "Private Group Registry",
+        circleMessagesTitle: "Secure Support Circle Messages",
+        // Tutor Verification
+        tutorVerifyEyebrow: "F5 Tutor Verification",
+        tutorVerifyTitle: "Tutor Profile Review",
+        verificationDocLabel: "Verification document",
+        submitReviewBtn: "Submit for Review",
+        searchVisibilityTitle: "Search visibility",
+        visibleInSearch: "Visible in search",
+        // Carpool
+        carpoolEyebrow: "F9 Carpool Finder",
+        carpoolTitle: "Commuter Matching",
+        destinationLabel: "Destination",
+        destinationPlaceholder: "Prince George's County",
+        // Tutor Requests
+        tutorRequestsEyebrow: "F10 Report Ghosting",
+        tutorRequestsTitle: "Tutor Requests",
+        tutorRequestsPill: "48 hour escalation",
+        // Privacy
+        privacyEyebrow: "F11 Profile Privacy",
+        privacyTitle: "Settings",
+        incognitoLabel: "Incognito Mode",
+        publicForumsTitle: "Public forums",
+        groupListsTitle: "Group lists",
+        restrictedRecordsTitle: "Restricted Records",
+        // Notifications
+        notificationsEyebrow: "F8 Push Notifications",
+        notificationsTitle: "Today's Events",
+        simulateBtn: "Simulate 1-hour Reminder",
+        // Club Calendar
+        clubEyebrow: "F12 Club Practice",
+        clubTitle: "Club Calendar",
+        clubPill: "Student Life feed sync",
+        practiceTitleLabel: "Practice title",
+        practiceTitlePlaceholder: "Open Badminton Practice",
+        practiceLocationLabel: "Location",
+        practiceLocationPlaceholder: "Rec Center Court B",
+        addPracticeBtn: "Add Open Practice",
+        clubCalendarTitle: "Club Calendar",
+        studentLifeTitle: "Student Life Discovery",
+        // SOS Modal
+        sosEyebrow: "F4 Crisis SOS",
+        sosTitleText: "Emergency Support",
+        sosMutedText: "Immediate one-tap options are available from any screen.",
+        sosCrisisLine: "Call Campus Crisis Line",
+        sosCampusPolice: "Call Campus Police",
+        sosClose: "Close",
+        // Dynamic content
         noMentors: "No mentors match that major.",
         noStudyGroups: "No active study groups match that course filter.",
         noPublicGroups: "No public groups in discovery.",
@@ -184,12 +301,129 @@ const translations = {
         ],
     },
     es: {
+        // Header
+        brandEyebrow: "ASWE Campus Platform",
+        brandTitle: "Centro de Apoyo Estudiantil",
+        brandTagline: "Flujos prototipo que cubren búsqueda de mentores, enrutamiento de apoyo, grupos de estudio, tutoría y vida estudiantil.",
+        // Nav
         navMentors: "Mentores",
         navSupport: "Apoyo",
         navStudyGroups: "Grupos",
+        // Hero
+        heroEyebrow: "Herramientas comunitarias siempre activas",
+        heroTitle: "Una interfaz para ayuda académica, apoyo de bienestar, coordinación de traslados y descubrimiento del campus.",
+        heroCopy: "Cada módulo a continuación demuestra directamente uno o más de los criterios de aceptación que agregaste.",
         heroActionStudyGroups: "Buscar un grupo de estudio",
         heroActionNfr: "Ver plan NFR",
         activeLanguage: "ES",
+        statsCriteria: "criterios representados",
+        statsPublicCircles: "círculos públicos",
+        statsNotifications: "notificaciones",
+        statsActiveLanguage: "idioma activo",
+        // NFR
+        nfrEyebrow: "Preparación No Funcional",
+        nfrTitle: "Seguridad, Privacidad, Confiabilidad y Escala",
+        nfrPill: "Objetivos de arquitectura",
+        nfrCard1Title: "Cifrado de Círculos de Apoyo",
+        nfrCard1Desc: "Cifrado AES-256 en reposo, TLS 1.3 en tránsito y acceso a mensajes por roles.",
+        nfrCard2Title: "Datos Estudiantiles Conformes con FERPA",
+        nfrCard2Desc: "El GPA y las etiquetas de salud mental están enmascarados en el prototipo y marcados como registros académicos restringidos.",
+        nfrCard3Title: "Disponibilidad SOS del 99.99%",
+        nfrCard3Desc: "Las llamadas de emergencia están aisladas detrás de un enrutamiento redundante y permanecen disponibles durante las ventanas de mantenimiento.",
+        nfrCard4Title: "Escala y Recuperación",
+        nfrCard4Desc: "Los objetivos incluyen búsqueda de menos de 1.5 segundos con 1,000 usuarios simultáneos, soporte para 10,000 estudiantes y un RPO de base de datos de 15 minutos.",
+        // Compliance
+        complianceEyebrow: "Protecciones del Prototipo",
+        complianceTitle: "Resumen de Cumplimiento",
+        compliancePill: "Visible en la interfaz",
+        // Mentor Discovery
+        mentorEyebrow: "F1 Búsqueda de Mentores",
+        mentorTitle: "Descubrimiento de Mentores",
+        majorLabel: "Especialidad",
+        allMajors: "Todas las especialidades",
+        // Mentor Profile
+        mentorProfileEyebrow: "F6 Charlas de Café",
+        mentorProfileTitle: "Perfil del Mentor",
+        mentorProfilePill: "Demo de calendario",
+        mentorProfileHint: "Elige un horario disponible para simular un flujo de reserva y crear una invitación para ambas partes.",
+        timeSlotLabel: "Horario disponible",
+        bookBtn: "Reservar",
+        // Support Form
+        supportEyebrow: "F2 Control de Bienestar",
+        supportFormTitle: "Formulario de Apoyo",
+        supportPill: "Enruta al panel de vivienda",
+        concernLabel: "Resumen de la preocupación",
+        concernPlaceholder: "Describe la preocupación para el equipo de vivienda.",
+        anonymousLabel: "Enviar de forma anónima",
+        submitBtn: "Enviar",
+        // Housing Queue
+        housingEyebrow: "Cola de Vivienda",
+        housingTitle: "Panel de Enrutamiento",
+        housingPill: "Recepción en vivo",
+        // Study Groups
+        studyGroupsEyebrow: "F3 Filtro de Grupos de Estudio",
+        studyGroupsTitle: "Grupos de Estudio Activos",
+        courseFilterLabel: "Filtro de curso",
+        courseFilterPlaceholder: "Prueba MATH 271",
+        // Support Circles
+        circlesEyebrow: "F7 Círculos de Apoyo",
+        circlesTitle: "Crear Nuevo Grupo",
+        circlesPill: "Visible en el feed de descubrimiento",
+        groupNameLabel: "Nombre del grupo",
+        groupNamePlaceholder: "Círculo de Apoyo Primera Generación",
+        visibilityLabel: "Visibilidad",
+        publicOption: "Público",
+        privateOption: "Privado/Solo por invitación",
+        createGroupBtn: "Crear Grupo",
+        publicFeedTitle: "Feed de Descubrimiento Público",
+        privateFeedTitle: "Registro de Grupos Privados",
+        circleMessagesTitle: "Mensajes Seguros de Círculo de Apoyo",
+        // Tutor Verification
+        tutorVerifyEyebrow: "F5 Verificación de Tutor",
+        tutorVerifyTitle: "Revisión del Perfil del Tutor",
+        verificationDocLabel: "Documento de verificación",
+        submitReviewBtn: "Enviar a revisión",
+        searchVisibilityTitle: "Visibilidad en búsqueda",
+        visibleInSearch: "Visible en la búsqueda",
+        // Carpool
+        carpoolEyebrow: "F9 Buscador de Carpooling",
+        carpoolTitle: "Coincidencias de Traslado",
+        destinationLabel: "Destino",
+        destinationPlaceholder: "Prince George's County",
+        // Tutor Requests
+        tutorRequestsEyebrow: "F10 Reportar Desaparición",
+        tutorRequestsTitle: "Solicitudes de Tutor",
+        tutorRequestsPill: "Escalada a las 48 horas",
+        // Privacy
+        privacyEyebrow: "F11 Privacidad del Perfil",
+        privacyTitle: "Configuración",
+        incognitoLabel: "Modo incógnito",
+        publicForumsTitle: "Foros públicos",
+        groupListsTitle: "Listas de grupos",
+        restrictedRecordsTitle: "Registros Restringidos",
+        // Notifications
+        notificationsEyebrow: "F8 Notificaciones Push",
+        notificationsTitle: "Eventos de Hoy",
+        simulateBtn: "Simular recordatorio de 1 hora",
+        // Club Calendar
+        clubEyebrow: "F12 Práctica del Club",
+        clubTitle: "Calendario del Club",
+        clubPill: "Sincronización con vida estudiantil",
+        practiceTitleLabel: "Título de práctica",
+        practiceTitlePlaceholder: "Práctica Abierta de Bádminton",
+        practiceLocationLabel: "Ubicación",
+        practiceLocationPlaceholder: "Cancha B del Centro Recreativo",
+        addPracticeBtn: "Agregar Práctica Abierta",
+        clubCalendarTitle: "Calendario del Club",
+        studentLifeTitle: "Descubrimiento de Vida Estudiantil",
+        // SOS Modal
+        sosEyebrow: "F4 SOS de Crisis",
+        sosTitleText: "Apoyo de Emergencia",
+        sosMutedText: "Las opciones de un solo toque están disponibles desde cualquier pantalla.",
+        sosCrisisLine: "Llamar a la Línea de Crisis del Campus",
+        sosCampusPolice: "Llamar a la Policía del Campus",
+        sosClose: "Cerrar",
+        // Dynamic content
         noMentors: "No hay mentores que coincidan con esa especialidad.",
         noStudyGroups: "No hay grupos de estudio activos que coincidan con ese filtro.",
         noPublicGroups: "No hay grupos publicos en descubrimiento.",
@@ -476,6 +710,19 @@ function renderLanguage() {
     const heroButtons = document.querySelectorAll('.hero-actions [data-jump]');
     heroButtons[0].textContent = t().heroActionStudyGroups;
     heroButtons[1].textContent = t().heroActionNfr;
+
+    document.querySelectorAll('[data-i18n]').forEach((el) => {
+        const key = el.dataset.i18n;
+        if (t()[key] !== undefined) {
+            el.textContent = t()[key];
+        }
+    });
+    document.querySelectorAll('[data-i18n-placeholder]').forEach((el) => {
+        const key = el.dataset.i18nPlaceholder;
+        if (t()[key] !== undefined) {
+            el.placeholder = t()[key];
+        }
+    });
 }
 
 function renderMentors() {
@@ -575,7 +822,7 @@ function renderSupportCircles() {
 }
 
 function renderTutorVerification() {
-    tutorStatusBadge.textContent = state.tutorProfile.searchable ? "Visible in search" : state.tutorProfile.status;
+    tutorStatusBadge.textContent = state.tutorProfile.searchable ? t().visibleInSearch : state.tutorProfile.status;
     tutorStatusBadge.classList.toggle("warning-pill", !state.tutorProfile.searchable);
 
     const visibleTutors = state.tutorDirectory.filter((tutor) => {

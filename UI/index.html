@@ -16,9 +16,10 @@
 <body>
     <header class="topbar">
         <div class="brand-wrap">
-            <p class="eyebrow">ASWE Campus Platform</p>
-            <h1 class="brand">Student Support Hub</h1>
-            <p class="tagline">Prototype flows covering mentor search, support routing, study groups, tutoring, and
+            <p class="eyebrow" data-i18n="brandEyebrow">ASWE Campus Platform</p>
+            <h1 class="brand" data-i18n="brandTitle">Student Support Hub</h1>
+            <p class="tagline" data-i18n="brandTagline">Prototype flows covering mentor search, support routing, study
+                groups, tutoring, and
                 student life.</p>
         </div>
         <div class="top-actions">
@@ -40,9 +41,11 @@
     <main class="layout">
         <section class="hero card">
             <div>
-                <p class="eyebrow">Always-on community tooling</p>
-                <h2>One interface for academic help, wellness support, commuter coordination, and campus discovery.</h2>
-                <p class="hero-copy">Each module below directly demonstrates one or more of the acceptance criteria you
+                <p class="eyebrow" data-i18n="heroEyebrow">Always-on community tooling</p>
+                <h2 data-i18n="heroTitle">One interface for academic help, wellness support, commuter coordination, and
+                    campus discovery.</h2>
+                <p class="hero-copy" data-i18n="heroCopy">Each module below directly demonstrates one or more of the
+                    acceptance criteria you
                     added.</p>
                 <div class="hero-actions">
                     <button class="primary-btn" type="button" data-jump="study-groups">Find a Study Group</button>
@@ -52,19 +55,19 @@
             <div class="hero-stats" aria-label="Prototype status">
                 <article>
                     <strong>12</strong>
-                    <span>criteria represented</span>
+                    <span data-i18n="statsCriteria">criteria represented</span>
                 </article>
                 <article>
                     <strong id="publicGroupsCount">0</strong>
-                    <span>public circles</span>
+                    <span data-i18n="statsPublicCircles">public circles</span>
                 </article>
                 <article>
                     <strong id="notificationCount">0</strong>
-                    <span>notifications</span>
+                    <span data-i18n="statsNotifications">notifications</span>
                 </article>
                 <article>
                     <strong id="activeLanguageLabel">EN</strong>
-                    <span>active language</span>
+                    <span data-i18n="statsActiveLanguage">active language</span>
                 </article>
             </div>
         </section>
@@ -73,29 +76,33 @@
             <article class="card section-card" id="nfr-center">
                 <div class="section-heading">
                     <div>
-                        <p class="eyebrow">Non-Functional Readiness</p>
-                        <h2>Security, Privacy, Reliability, and Scale</h2>
+                        <p class="eyebrow" data-i18n="nfrEyebrow">Non-Functional Readiness</p>
+                        <h2 data-i18n="nfrTitle">Security, Privacy, Reliability, and Scale</h2>
                     </div>
-                    <span class="pill">Architecture targets</span>
+                    <span class="pill" data-i18n="nfrPill">Architecture targets</span>
                 </div>
                 <div class="stack-list">
                     <article class="list-card static-card emphasis-card">
-                        <strong>Support Circles Encryption</strong>
-                        <span>AES-256 encryption at rest, TLS 1.3 in transit, and role-gated message access.</span>
+                        <strong data-i18n="nfrCard1Title">Support Circles Encryption</strong>
+                        <span data-i18n="nfrCard1Desc">AES-256 encryption at rest, TLS 1.3 in transit, and role-gated
+                            message access.</span>
                     </article>
                     <article class="list-card static-card emphasis-card">
-                        <strong>FERPA-Compliant Student Data</strong>
-                        <span>GPA and mental health tags are masked in the prototype and flagged as restricted academic
+                        <strong data-i18n="nfrCard2Title">FERPA-Compliant Student Data</strong>
+                        <span data-i18n="nfrCard2Desc">GPA and mental health tags are masked in the prototype and
+                            flagged as restricted academic
                             records.</span>
                     </article>
                     <article class="list-card static-card emphasis-card">
-                        <strong>99.99% SOS Availability</strong>
-                        <span>Emergency calling is isolated behind redundant routing and remains available during
+                        <strong data-i18n="nfrCard3Title">99.99% SOS Availability</strong>
+                        <span data-i18n="nfrCard3Desc">Emergency calling is isolated behind redundant routing and
+                            remains available during
                             maintenance windows.</span>
                     </article>
                     <article class="list-card static-card emphasis-card">
-                        <strong>Scale and Recovery</strong>
-                        <span>Targets include sub-1.5 second search under 1,000 concurrent users, support for 10,000
+                        <strong data-i18n="nfrCard4Title">Scale and Recovery</strong>
+                        <span data-i18n="nfrCard4Desc">Targets include sub-1.5 second search under 1,000 concurrent
+                            users, support for 10,000
                             concurrent students, and a 15-minute database RPO.</span>
                     </article>
                 </div>
@@ -104,10 +111,10 @@
             <article class="card section-card">
                 <div class="section-heading compact">
                     <div>
-                        <p class="eyebrow">Prototype Guardrails</p>
-                        <h2>Compliance Snapshot</h2>
+                        <p class="eyebrow" data-i18n="complianceEyebrow">Prototype Guardrails</p>
+                        <h2 data-i18n="complianceTitle">Compliance Snapshot</h2>
                     </div>
-                    <span class="pill">Visible in UI</span>
+                    <span class="pill" data-i18n="compliancePill">Visible in UI</span>
                 </div>
                 <div id="complianceList" class="stack-list compact-list" aria-live="polite"></div>
             </article>
@@ -117,13 +124,13 @@
             <article class="card section-card" id="mentor-discovery">
                 <div class="section-heading">
                     <div>
-                        <p class="eyebrow">F1 Mentor Search</p>
-                        <h2>Mentor Discovery</h2>
+                        <p class="eyebrow" data-i18n="mentorEyebrow">F1 Mentor Search</p>
+                        <h2 data-i18n="mentorTitle">Mentor Discovery</h2>
                     </div>
                     <label class="inline-field">
-                        <span>Major</span>
+                        <span data-i18n="majorLabel">Major</span>
                         <select id="majorFilter">
-                            <option value="All">All majors</option>
+                            <option value="All" data-i18n="allMajors">All majors</option>
                             <option value="Computer Science">Computer Science</option>
                             <option value="Information Systems">Information Systems</option>
                             <option value="Psychology">Psychology</option>
@@ -136,24 +143,25 @@
             <article class="card section-card" id="mentor-profile">
                 <div class="section-heading compact">
                     <div>
-                        <p class="eyebrow">F6 Coffee Chats</p>
-                        <h2>Mentor Profile</h2>
+                        <p class="eyebrow" data-i18n="mentorProfileEyebrow">F6 Coffee Chats</p>
+                        <h2 data-i18n="mentorProfileTitle">Mentor Profile</h2>
                     </div>
-                    <span class="pill">Calendar demo</span>
+                    <span class="pill" data-i18n="mentorProfilePill">Calendar demo</span>
                 </div>
                 <div class="profile-shell">
                     <div>
                         <h3 id="selectedMentorName">Jordan Lee</h3>
                         <p id="selectedMentorMeta" class="muted-text">Computer Science • AI Mentor</p>
-                        <p class="muted-text">Pick an open slot to simulate a booking flow and create an invitation for
+                        <p class="muted-text" data-i18n="mentorProfileHint">Pick an open slot to simulate a booking flow
+                            and create an invitation for
                             both parties.</p>
                     </div>
                     <form id="coffeeChatForm" class="stack-form">
                         <label>
-                            <span>Open time slot</span>
+                            <span data-i18n="timeSlotLabel">Open time slot</span>
                             <select id="timeSlotSelect"></select>
                         </label>
-                        <button type="submit" class="primary-btn">Book</button>
+                        <button type="submit" class="primary-btn" data-i18n="bookBtn">Book</button>
                     </form>
                     <div id="calendarInviteStatus" class="status-panel" aria-live="polite"></div>
                 </div>
@@ -164,32 +172,32 @@
             <article class="card section-card" id="support-form">
                 <div class="section-heading">
                     <div>
-                        <p class="eyebrow">F2 Wellness Check</p>
-                        <h2>Support Form</h2>
+                        <p class="eyebrow" data-i18n="supportEyebrow">F2 Wellness Check</p>
+                        <h2 data-i18n="supportFormTitle">Support Form</h2>
                     </div>
-                    <span class="pill">Routes to Housing dashboard</span>
+                    <span class="pill" data-i18n="supportPill">Routes to Housing dashboard</span>
                 </div>
                 <form id="supportForm" class="stack-form">
                     <label>
-                        <span>Concern summary</span>
-                        <textarea id="supportMessage" rows="4" placeholder="Describe the concern for the Housing team."
-                            required></textarea>
+                        <span data-i18n="concernLabel">Concern summary</span>
+                        <textarea id="supportMessage" rows="4" data-i18n-placeholder="concernPlaceholder"
+                            placeholder="Describe the concern for the Housing team." required></textarea>
                     </label>
                     <label class="checkbox-row">
                         <input id="anonymousToggle" type="checkbox" />
-                        <span>Submit Anonymously</span>
+                        <span data-i18n="anonymousLabel">Submit Anonymously</span>
                     </label>
-                    <button type="submit" class="primary-btn">Submit</button>
+                    <button type="submit" class="primary-btn" data-i18n="submitBtn">Submit</button>
                 </form>
             </article>
 
             <article class="card section-card">
                 <div class="section-heading compact">
                     <div>
-                        <p class="eyebrow">Housing Queue</p>
-                        <h2>Routing Dashboard</h2>
+                        <p class="eyebrow" data-i18n="housingEyebrow">Housing Queue</p>
+                        <h2 data-i18n="housingTitle">Routing Dashboard</h2>
                     </div>
-                    <span class="pill">Live intake</span>
+                    <span class="pill" data-i18n="housingPill">Live intake</span>
                 </div>
                 <div id="housingDashboard" class="stack-list" aria-live="polite"></div>
             </article>
@@ -199,12 +207,13 @@
             <article class="card section-card" id="study-groups">
                 <div class="section-heading">
                     <div>
-                        <p class="eyebrow">F3 Study Group Filter</p>
-                        <h2>Active Study Groups</h2>
+                        <p class="eyebrow" data-i18n="studyGroupsEyebrow">F3 Study Group Filter</p>
+                        <h2 data-i18n="studyGroupsTitle">Active Study Groups</h2>
                     </div>
                     <label class="inline-field wide">
-                        <span>Course filter</span>
-                        <input id="courseFilter" type="search" placeholder="Try MATH 271" />
+                        <span data-i18n="courseFilterLabel">Course filter</span>
+                        <input id="courseFilter" type="search" data-i18n-placeholder="courseFilterPlaceholder"
+                            placeholder="Try MATH 271" />
                     </label>
                 </div>
                 <div id="studyGroupList" class="stack-list" aria-live="polite"></div>
@@ -213,37 +222,38 @@
             <article class="card section-card">
                 <div class="section-heading">
                     <div>
-                        <p class="eyebrow">F7 Support Circles</p>
-                        <h2>Create New Group</h2>
+                        <p class="eyebrow" data-i18n="circlesEyebrow">F7 Support Circles</p>
+                        <h2 data-i18n="circlesTitle">Create New Group</h2>
                     </div>
-                    <span class="pill">Discovery feed aware</span>
+                    <span class="pill" data-i18n="circlesPill">Discovery feed aware</span>
                 </div>
                 <form id="groupForm" class="stack-form">
                     <label>
-                        <span>Group name</span>
-                        <input id="groupName" type="text" placeholder="First-Gen Support Circle" required />
+                        <span data-i18n="groupNameLabel">Group name</span>
+                        <input id="groupName" type="text" data-i18n-placeholder="groupNamePlaceholder"
+                            placeholder="First-Gen Support Circle" required />
                     </label>
                     <label>
-                        <span>Visibility</span>
+                        <span data-i18n="visibilityLabel">Visibility</span>
                         <select id="groupVisibility">
-                            <option value="Public">Public</option>
-                            <option value="Private/Invite Only">Private/Invite Only</option>
+                            <option value="Public" data-i18n="publicOption">Public</option>
+                            <option value="Private/Invite Only" data-i18n="privateOption">Private/Invite Only</option>
                         </select>
                     </label>
-                    <button type="submit" class="primary-btn">Create Group</button>
+                    <button type="submit" class="primary-btn" data-i18n="createGroupBtn">Create Group</button>
                 </form>
                 <div class="sub-grid">
                     <div>
-                        <h3>Public Discovery Feed</h3>
+                        <h3 data-i18n="publicFeedTitle">Public Discovery Feed</h3>
                         <div id="publicGroupList" class="stack-list compact-list" aria-live="polite"></div>
                     </div>
                     <div>
-                        <h3>Private Group Registry</h3>
+                        <h3 data-i18n="privateFeedTitle">Private Group Registry</h3>
                         <div id="privateGroupList" class="stack-list compact-list" aria-live="polite"></div>
                     </div>
                 </div>
                 <div class="section-break">
-                    <h3>Secure Support Circle Messages</h3>
+                    <h3 data-i18n="circleMessagesTitle">Secure Support Circle Messages</h3>
                     <div id="supportCircleMessages" class="stack-list compact-list" aria-live="polite"></div>
                 </div>
             </article>
@@ -253,21 +263,21 @@
             <article class="card section-card">
                 <div class="section-heading">
                     <div>
-                        <p class="eyebrow">F5 Tutor Verification</p>
-                        <h2>Tutor Profile Review</h2>
+                        <p class="eyebrow" data-i18n="tutorVerifyEyebrow">F5 Tutor Verification</p>
+                        <h2 data-i18n="tutorVerifyTitle">Tutor Profile Review</h2>
                     </div>
                     <span id="tutorStatusBadge" class="pill status-pill">Visible in search</span>
                 </div>
                 <form id="tutorVerificationForm" class="stack-form">
                     <label>
-                        <span>Verification document</span>
+                        <span data-i18n="verificationDocLabel">Verification document</span>
                         <input id="verificationFile" type="file" accept="application/pdf,.pdf" required />
                     </label>
-                    <button type="submit" class="primary-btn">Submit for Review</button>
+                    <button type="submit" class="primary-btn" data-i18n="submitReviewBtn">Submit for Review</button>
                 </form>
                 <div id="tutorVerificationMessage" class="status-panel" aria-live="polite"></div>
                 <div>
-                    <h3>Search visibility</h3>
+                    <h3 data-i18n="searchVisibilityTitle">Search visibility</h3>
                     <div id="tutorSearchList" class="stack-list compact-list" aria-live="polite"></div>
                 </div>
             </article>
@@ -275,12 +285,13 @@
             <article class="card section-card" id="commuter-section">
                 <div class="section-heading">
                     <div>
-                        <p class="eyebrow">F9 Carpool Finder</p>
-                        <h2>Commuter Matching</h2>
+                        <p class="eyebrow" data-i18n="carpoolEyebrow">F9 Carpool Finder</p>
+                        <h2 data-i18n="carpoolTitle">Commuter Matching</h2>
                     </div>
                     <label class="inline-field wide">
-                        <span>Destination</span>
-                        <input id="destinationSearch" type="search" placeholder="Prince George's County" />
+                        <span data-i18n="destinationLabel">Destination</span>
+                        <input id="destinationSearch" type="search" data-i18n-placeholder="destinationPlaceholder"
+                            placeholder="Prince George's County" />
                     </label>
                 </div>
                 <div id="carpoolResults" class="stack-list" aria-live="polite"></div>
@@ -291,10 +302,10 @@
             <article class="card section-card">
                 <div class="section-heading">
                     <div>
-                        <p class="eyebrow">F10 Report Ghosting</p>
-                        <h2>Tutor Requests</h2>
+                        <p class="eyebrow" data-i18n="tutorRequestsEyebrow">F10 Report Ghosting</p>
+                        <h2 data-i18n="tutorRequestsTitle">Tutor Requests</h2>
                     </div>
-                    <span class="pill">48 hour escalation</span>
+                    <span class="pill" data-i18n="tutorRequestsPill">48 hour escalation</span>
                 </div>
                 <div id="tutorRequestList" class="stack-list" aria-live="polite"></div>
             </article>
@@ -302,27 +313,27 @@
             <article class="card section-card">
                 <div class="section-heading">
                     <div>
-                        <p class="eyebrow">F11 Profile Privacy</p>
-                        <h2>Settings</h2>
+                        <p class="eyebrow" data-i18n="privacyEyebrow">F11 Profile Privacy</p>
+                        <h2 data-i18n="privacyTitle">Settings</h2>
                     </div>
                     <span id="privacyBadge" class="pill">Public identity</span>
                 </div>
                 <label class="checkbox-row toggle-card">
                     <input id="incognitoToggle" type="checkbox" />
-                    <span>Incognito Mode</span>
+                    <span data-i18n="incognitoLabel">Incognito Mode</span>
                 </label>
                 <div class="sub-grid">
                     <div>
-                        <h3>Public forums</h3>
+                        <h3 data-i18n="publicForumsTitle">Public forums</h3>
                         <div id="forumPreview" class="stack-list compact-list"></div>
                     </div>
                     <div>
-                        <h3>Group lists</h3>
+                        <h3 data-i18n="groupListsTitle">Group lists</h3>
                         <div id="groupMemberPreview" class="stack-list compact-list"></div>
                     </div>
                 </div>
                 <div class="section-break">
-                    <h3>Restricted Records</h3>
+                    <h3 data-i18n="restrictedRecordsTitle">Restricted Records</h3>
                     <div id="ferpaRecordList" class="stack-list compact-list"></div>
                 </div>
             </article>
@@ -332,10 +343,11 @@
             <article class="card section-card">
                 <div class="section-heading">
                     <div>
-                        <p class="eyebrow">F8 Push Notifications</p>
-                        <h2>Today&apos;s Events</h2>
+                        <p class="eyebrow" data-i18n="notificationsEyebrow">F8 Push Notifications</p>
+                        <h2 data-i18n="notificationsTitle">Today&apos;s Events</h2>
                     </div>
-                    <button id="simulateNotification" class="chip-btn" type="button">Simulate 1-hour Reminder</button>
+                    <button id="simulateNotification" class="chip-btn" type="button" data-i18n="simulateBtn">Simulate
+                        1-hour Reminder</button>
                 </div>
                 <div id="eventList" class="stack-list"></div>
                 <div id="notificationCenter" class="stack-list compact-list" aria-live="polite"></div>
@@ -344,29 +356,31 @@
             <article class="card section-card">
                 <div class="section-heading">
                     <div>
-                        <p class="eyebrow">F12 Club Practice</p>
-                        <h2>Club Calendar</h2>
+                        <p class="eyebrow" data-i18n="clubEyebrow">F12 Club Practice</p>
+                        <h2 data-i18n="clubTitle">Club Calendar</h2>
                     </div>
-                    <span class="pill">Student Life feed sync</span>
+                    <span class="pill" data-i18n="clubPill">Student Life feed sync</span>
                 </div>
                 <form id="practiceForm" class="stack-form">
                     <label>
-                        <span>Practice title</span>
-                        <input id="practiceTitle" type="text" placeholder="Open Badminton Practice" required />
+                        <span data-i18n="practiceTitleLabel">Practice title</span>
+                        <input id="practiceTitle" type="text" data-i18n-placeholder="practiceTitlePlaceholder"
+                            placeholder="Open Badminton Practice" required />
                     </label>
                     <label>
-                        <span>Location</span>
-                        <input id="practiceLocation" type="text" placeholder="Rec Center Court B" required />
+                        <span data-i18n="practiceLocationLabel">Location</span>
+                        <input id="practiceLocation" type="text" data-i18n-placeholder="practiceLocationPlaceholder"
+                            placeholder="Rec Center Court B" required />
                     </label>
-                    <button type="submit" class="primary-btn">Add Open Practice</button>
+                    <button type="submit" class="primary-btn" data-i18n="addPracticeBtn">Add Open Practice</button>
                 </form>
                 <div class="sub-grid">
                     <div>
-                        <h3>Club Calendar</h3>
+                        <h3 data-i18n="clubCalendarTitle">Club Calendar</h3>
                         <div id="clubCalendarList" class="stack-list compact-list" aria-live="polite"></div>
                     </div>
                     <div>
-                        <h3>Student Life Discovery</h3>
+                        <h3 data-i18n="studentLifeTitle">Student Life Discovery</h3>
                         <div id="studentLifeFeed" class="stack-list compact-list" aria-live="polite"></div>
                     </div>
                 </div>
@@ -378,15 +392,17 @@
         <div class="modal-card">
             <div class="section-heading compact">
                 <div>
-                    <p class="eyebrow">F4 Crisis SOS</p>
-                    <h2 id="sosTitle">Emergency Support</h2>
+                    <p class="eyebrow" data-i18n="sosEyebrow">F4 Crisis SOS</p>
+                    <h2 id="sosTitle" data-i18n="sosTitleText">Emergency Support</h2>
                 </div>
-                <button id="closeSosModal" class="chip-btn" type="button">Close</button>
+                <button id="closeSosModal" class="chip-btn" type="button" data-i18n="sosClose">Close</button>
             </div>
-            <p class="muted-text">Immediate one-tap options are available from any screen.</p>
+            <p class="muted-text" data-i18n="sosMutedText">Immediate one-tap options are available from any screen.</p>
             <div class="sos-actions">
-                <a class="primary-btn action-link" href="tel:+13015550110">Call Campus Crisis Line</a>
-                <a class="chip-btn action-link" href="tel:+13015550119">Call Campus Police</a>
+                <a class="primary-btn action-link" href="tel:+13015550110" data-i18n="sosCrisisLine">Call Campus Crisis
+                    Line</a>
+                <a class="chip-btn action-link" href="tel:+13015550119" data-i18n="sosCampusPolice">Call Campus
+                    Police</a>
             </div>
         </div>
     </div>
